@@ -35,7 +35,7 @@ public class EmployeeController {
     public Flux<Employee> findAll() {
         return employeeService.getAllUsers();
     }
-
+  
     @PutMapping("/updateProject")
     public Mono<Void> updateProjectForAllEmployees(@RequestParam String newProject) {
         return employeeService.updateProjectForAllEmployees(newProject);
